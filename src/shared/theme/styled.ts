@@ -1,6 +1,6 @@
 /**
  * This file is a workaround for the issue with VSCode IntelliSense
- * error when using re-exported styled-components/native
+ * autocomplete error when using re-exported styled-components/native
  *
  * @see https://github.com/validatorjs/validator.js/issues/1262
  */
