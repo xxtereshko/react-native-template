@@ -1,5 +1,4 @@
-/**
- * styled components/native wrapper
- */
-
-export { styled } from './styled'
+export { ThemeProvider } from './provider'
+export * from './styled'
+export { TTheme, TTypographyVariants } from './types'
+export { lightTheme } from './variants'

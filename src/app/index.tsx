@@ -1,19 +1,17 @@
-import { styled } from '@shared/theme'
-import { StatusBar } from 'expo-status-bar'
-import { Text } from 'react-native'
+import { Home } from '@pages/home'
+import { useCachedResources } from '@shared/hooks'
+import { ThemeProvider } from '@shared/theme'
 
 export const App = () => {
+  const isResourcesLoaded = useCachedResources()
+
+  if (!isResourcesLoaded) {
+    return null
+  }
+
   return (
-    <Wrapper>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </Wrapper>
+    <ThemeProvider>
+      <Home />
+    </ThemeProvider>
   )
 }
-
-const Wrapper = styled.View`
-  flex: 1;
-  background-color: #fff;
-  align-items: center;
-  justify-content: center;
-`

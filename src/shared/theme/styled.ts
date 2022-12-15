@@ -7,4 +7,4 @@
 
 import * as native from 'styled-components/native'
 
-export const { default: styled } = native
+export const { default: styled, css } = native
