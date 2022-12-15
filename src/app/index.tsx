@@ -1,4 +1,3 @@
-import { Comp } from '@shared/ui'
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
@@ -6,7 +5,6 @@ export const App = () => {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <Comp />
       <StatusBar style="auto" />
     </View>
   )
